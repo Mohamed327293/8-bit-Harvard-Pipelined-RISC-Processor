@@ -1,6 +1,6 @@
 # 8-bit Pipelined RISC Processor – ELC3030
 
-This repository contains the design and implementation of a simple **8-bit pipelined RISC processor**, developed as part of the **ELC3030 – Advanced Processor Architecture** course at the **Faculty of Engineering, Cairo University**.
+Design and implementation of a simple **8-bit pipelined RISC processor**, developed as part of the **ELC3030 – Advanced Processor Architecture** course at the **Faculty of Engineering, Cairo University**.
 
 The processor follows a **RISC-like Instruction Set Architecture (ISA)** and is implemented using **Verilog HDL**, with functionality verified through simulation and waveform analysis.
 
@@ -10,7 +10,7 @@ The processor follows a **RISC-like Instruction Set Architecture (ISA)** and is 
 
 - 8-bit processor architecture  
 - 4 general-purpose registers (**R0–R3**)  
-  - **R3** acts as the **Stack Pointer (SP)**  
+- **R3** acts as the **Stack Pointer (SP)**  
 - 256-byte byte-addressable memory  
 - FSM-based Control Unit  
 - Support for **interrupt handling**  
@@ -68,12 +68,3 @@ The processor follows a **RISC-like Instruction Set Architecture (ISA)** and is 
 - **Simulation Tools**: ModelSim / EDA Playground  
 - **Verification**: Waveform analysis using VCD dumps  
 
----
-
-## 📂 Repository Structure
-```text
-├── src/            # Verilog source files
-├── testbench/      # Testbenches
-├── simulation/     # Waveforms and simulation outputs
-├── docs/           # Project documentation (ISA, diagrams, reports)
-└── README.md
