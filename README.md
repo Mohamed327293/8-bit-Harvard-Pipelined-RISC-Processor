@@ -1,44 +1,31 @@
-# **8-bit-Harvard-Pipelined-RISC-Processor**
-Design and implementation of a simple 8-bit pipelined RISC processor with FSM-based control unit, supporting interrupts and a custom ISA. Course project for ELC3030 – Advanced Processor Architecture, Cairo University.
+# 8-bit Harvard Pipelined RISC Processor
 
-## **8-bit Pipelined RISC Processor – ELC3030**
-This repository contains the design and implementation of a simple 8-bit pipelined processor developed as part of the ELC3030 – Advanced Processor Architecture course at the Faculty of Engineering, Cairo University.
+## Features
+- 8-bit data calculations
+- Harvard architecture
+- Pipelining for improved performance
+- Flexibility for various instruction sets
 
-The processor follows a RISC-like Instruction Set Architecture (ISA) and is implemented using Verilog HDL.
+## Components
+- **ALU**: Performs arithmetic and logic operations
+- **Registers**: Store data temporarily during processing
+- **Control Unit**: Directs operation of the processor
 
-## **📌 Project Overview**
-8-bit processor with 4 general-purpose registers (R0–R3)
-R3 acts as the Stack Pointer (SP)
-256-byte byte-addressable memory
-FSM-based Control Unit
-Support for interrupt handling
-Single shared memory (Von Neumann architecture – if implemented)
-Designed and verified through simulation and waveform analysis
+## Operation Cycle
+1. **Fetch**: Retrieve instruction from memory
+2. **Decode**: Interpret the instruction
+3. **Execute**: Carry out the instruction
+4. **Write Back**: Store the result in memory
 
-## **🧠 Processor Features**
-Instruction Length: 1-byte and 2-byte instructions
-Instruction Formats:
-A-format (Arithmetic / Logic / Stack / I/O)
-B-format (Branch / Jump / Call / Interrupt)
-L-format (Load / Store / Immediate)
-Condition Code Register (CCR):
-Z (Zero)
-N (Negative)
-C (Carry)
-V (Overflow)
+## Benefits
+- Enhanced processing speed due to pipelining
+- Efficient data handling with Harvard architecture
+- Scalable to more complex designs
 
-## **🧾 Supported Instructions**
-The processor supports a wide range of instructions including:
+## Future Work
+- Expanding instruction set
+- Improving power efficiency
+- Implementing error correction features
 
-Arithmetic: ADD, SUB, INC, DEC, NEG
-Logic: AND, OR, NOT
-Data Transfer: MOV, LDM, LDD, STD, LDI, STI
-Control Flow: JMP, JZ, JN, JC, JV, CALL, RET, LOOP
-Stack & I/O: PUSH, POP, IN, OUT
-Interrupt Handling: RTI
-(Refer to the project specification for full ISA details.)
-
-## **🛠️ Tools & Simulation**
-HDL: Verilog
-Simulation: ModelSim / EDA Playground
-Verification: Waveform analysis using VCD dumps
+## Conclusion
+The 8-bit Harvard Pipelined RISC Processor is a robust design for efficient data processing tasks. Further iterations may enhance its capabilities even more.
