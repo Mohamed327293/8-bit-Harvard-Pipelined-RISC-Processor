@@ -58,8 +58,6 @@ The processor follows a **RISC-like Instruction Set Architecture (ISA)** and is 
 ### Interrupt Handling
 - `RTI`
 
-> 📖 Refer to the project specification for full ISA and instruction encoding details.
-
 ---
 
 ## 🛠️ Tools & Simulation
